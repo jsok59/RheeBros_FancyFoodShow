@@ -78,6 +78,7 @@ body {
 	padding: 20px;
 	font-size: 2rem;
 	border-bottom: 1px solid #ccc;
+	scroll-margin-top: 5rem;
 }
 
 .snap-list section:nth-child(odd) {
@@ -88,6 +89,6 @@ body {
 	background: #dff0ff;
 }
 
-.introduction h1 {
+section h1 {
 	text-align: center;
 }
