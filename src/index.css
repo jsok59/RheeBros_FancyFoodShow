@@ -62,7 +62,6 @@ body {
 
 .header img {
 	width: 12.5rem;
-	float: left;
 	margin-top: -4px;
 }
 
@@ -79,7 +78,6 @@ body {
 	padding: 20px;
 	font-size: 2rem;
 	border-bottom: 1px solid #ccc;
-	box-sizing: border-box;
 }
 
 .snap-list section:nth-child(odd) {
@@ -88,4 +86,8 @@ body {
 
 .snap-list section:nth-child(even) {
 	background: #dff0ff;
+}
+
+.introduction h1 {
+	text-align: center;
 }
