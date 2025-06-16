@@ -5,11 +5,12 @@ html {
 body {
 	font-size: 1.4rem;
 	overflow: hidden;
+	color: #ffffff;
 }
 
 /* Sticky header at the top */
 .header {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	background: #fff;
@@ -66,11 +67,33 @@ body {
 	margin-top: -4px;
 }
 
+/* INTRODUCTION */
+
+.logo-intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+}
+
+.logo-intro p {
+	color: red;
+	font-size: 1.4rem;
+	white-space: nowrap;
+}
+
+.logo-intro h1 {
+	white-space: nowrap;
+}
+
 /* Container for vertically snapping sections */
 .snap-list {
+	padding-top: 5rem;
 	height: 100vh; /* Viewport-height for each section */
 	overflow-y: scroll;
 	scroll-snap-type: y mandatory;
+	background-color: #333332;
 }
 
 .snap-list section {
@@ -78,18 +101,9 @@ body {
 	scroll-snap-align: start;
 	padding: 20px;
 	font-size: 2rem;
-	border-bottom: 1px solid #ccc;
-}
-
-.snap-list section:nth-child(odd) {
-	background: #edf5ff;
-}
-
-.snap-list section:nth-child(even) {
-	background: #dff0ff;
 }
 
 section h1 {
-	margin-top: 5rem;
 	text-align: center;
+	margin-top: 5rem;
 }
