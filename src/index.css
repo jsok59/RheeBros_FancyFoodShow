@@ -72,8 +72,10 @@ body {
 .introduction .section-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  justify-content: space-between;
   align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .logo-intro {
@@ -131,7 +133,7 @@ body {
 .introduction .bottom-container {
   display: flex;
   flex-direction: column;
-  margin-top: auto;
+
   font-size: 1.4rem;
   letter-spacing: 0.5px;
   text-align: center;
