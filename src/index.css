@@ -19,7 +19,7 @@
 @font-face {
   font-family: "Brandon";
   src: url("./fonts/Brandon_bld.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
@@ -27,7 +27,31 @@
 @font-face {
   font-family: "Brandon";
   src: url("./fonts/Brandon_med.otf") format("opentype");
-  font-weight: lighter;
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/Brandon_reg.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/Brandon_light.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Brandon";
+  src: url("./fonts/Brandon_thin.otf") format("opentype");
+  font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
@@ -158,6 +182,7 @@ body {
 .introduction .thanks {
   font-size: 6.3rem;
   font-family: "Brandon", sans-serif;
+  font-weight: 800;
   line-height: 0.9;
 }
 .introduction .description {
@@ -173,7 +198,6 @@ body {
 }
 
 .introduction .bottom-container {
-  margin-top: 20px;
   text-align: center;
   font-size: 1.7rem;
   line-height: 1.3;
@@ -196,7 +220,8 @@ body {
 .brand-1,
 .brand-2,
 .brand-3,
-.brand-4 {
+.brand-4,
+.contacts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -221,7 +246,7 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  height: 8rem;
+  height: 8.5rem;
   max-width: 600px;
   width: 100%;
 }
@@ -236,10 +261,13 @@ body {
 .item {
   font-size: 2.1rem;
   justify-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .item p {
   margin-left: 10px;
+  line-height: 1.2;
 }
 
 .item img {
@@ -247,7 +275,8 @@ body {
 }
 
 .item a {
-  max-width: fit-content;
+  display: inline-block;
+  align-self: center;
 }
 
 /* ASSI BRAND */
@@ -317,3 +346,55 @@ body {
   background-color: #fee4b9;
 }
 /* CONTACT */
+
+.outer-container {
+  margin-top: 40px;
+  padding: 20px 40px 40px 40px;
+  max-width: 600px;
+  width: 100%;
+  font-size: 2.3rem;
+  font-weight: 200;
+  line-height: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 1px;
+}
+
+.outer-container > p {
+  color: inherit;
+  text-decoration: none;
+}
+
+.outer-container .contact-header {
+  border-top: 2px solid #d73e33;
+  padding-top: 20px;
+  color: #d73e33;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.outer-container .name {
+  font-weight: 400;
+  font-size: 3.3rem;
+  margin-top: 10px;
+}
+
+.outer-container .job {
+  font-size: 2.7rem;
+}
+
+.outer-container .number {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.inner-container .number:first-of-type {
+  margin-top: 10px;
+}
+
+.number > :first-child {
+  min-width: 20px;
+  font-weight: 800;
+}
