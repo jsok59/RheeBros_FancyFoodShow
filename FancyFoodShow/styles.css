@@ -235,7 +235,7 @@ body {
   display: grid;
   max-width: 600px;
   width: 100%;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px 60px 20px;
 }
 
 .brand-1 .logo,
@@ -246,14 +246,13 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  height: 8.5rem;
+  height: 9.8rem;
   max-width: 600px;
   width: 100%;
 }
 
 .brand-1 .logo img,
 .brand-2 .logo img,
-.brand-3 .logo img,
 .brand-4 .logo img {
   max-height: 100px;
 }
@@ -318,9 +317,9 @@ body {
   align-self: baseline;
 }
 
-/* .brand-3 .item a {
-  max-height: fit-content;
-} */
+.brand-3 .logo img {
+  max-width: 240px;
+}
 
 .brand-3 img {
   max-width: 200px;
@@ -338,6 +337,7 @@ body {
 
 .brand-3 .grid-wrapper {
   grid-template-columns: repeat(2, 1fr);
+  max-width: 480px;
 }
 
 /* DONGWON */
@@ -376,7 +376,7 @@ body {
 
 .outer-container .name {
   font-weight: 400;
-  font-size: 3.3rem;
+  font-size: 3.1rem;
   margin-top: 10px;
 }
 

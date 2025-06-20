@@ -56,6 +56,22 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("./fonts/Trade\ Gothic\ LT\ Pro\ Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Trade Gothic";
+  src: url("./fonts/Trade\ Gothic\ LT\ Pro.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @media (min-width: 350px) {
   .header .header-wrapper {
     max-width: 35rem;
@@ -215,6 +231,10 @@ body {
   min-width: 370px;
 }
 
+.grid-wrapper {
+  grid-template-columns: min-content;
+}
+
 /*brand-1 */
 
 .brand-1,
@@ -228,14 +248,13 @@ body {
   flex-direction: column;
 }
 
-.brand-1 .grid-wrapper,
 .brand-2 .grid-wrapper,
-.brand-3 .grid-wrapper,
-.brand-4 .grid-wrapper {
+.brand-3 .grid-wrapper {
   display: grid;
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
-  padding: 30px 20px 30px 20px;
+  padding: 30px 20px 60px 20px;
+  justify-content: center;
 }
 
 .brand-1 .logo,
@@ -246,14 +265,13 @@ body {
   justify-content: center;
   align-items: center;
   color: black;
-  height: 8.5rem;
-  max-width: 600px;
+  height: 9.8rem;
+  max-width: 550px;
   width: 100%;
 }
 
 .brand-1 .logo img,
 .brand-2 .logo img,
-.brand-3 .logo img,
 .brand-4 .logo img {
   max-height: 100px;
 }
@@ -281,6 +299,14 @@ body {
 
 /* ASSI BRAND */
 
+.brand-1 .grid-wrapper {
+  display: grid;
+  max-width: 550px;
+  width: 100%;
+  padding: 40px 20px 60px 20px;
+  justify-content: center;
+}
+
 .brand-1 .logo {
   background-color: white;
 }
@@ -306,6 +332,14 @@ body {
   gap: 20px;
 }
 
+.brand-2 .item img {
+  max-width: 320px;
+}
+
+.pouchdrink {
+  margin-top: 20px;
+}
+
 /* TCC */
 
 .brand-3 .logo {
@@ -318,17 +352,21 @@ body {
   align-self: baseline;
 }
 
-/* .brand-3 .item a {
-  max-height: fit-content;
-} */
+.brand-3 .item img {
+  max-width: 170px;
+}
+
+.brand-3 .logo img {
+  max-width: 240px;
+}
 
 .brand-3 img {
   max-width: 200px;
   justify-self: center;
 }
 
-.brand-3 .coconut-milk {
-  max-width: 130px;
+.brand-3 .coconut-milk img {
+  max-width: 110px;
   align-self: flex-start;
 }
 
@@ -337,7 +375,9 @@ body {
 }
 
 .brand-3 .grid-wrapper {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, min-content);
+  max-width: 550px;
+  column-gap: 20px;
 }
 
 /* DONGWON */
@@ -345,20 +385,28 @@ body {
 .brand-4 .logo {
   background-color: #fee4b9;
 }
+
+.brand-4 .grid-wrapper {
+  display: grid;
+  max-width: 550px;
+  width: 100%;
+  padding: 40px 20px 60px 20px;
+  justify-content: center;
+}
 /* CONTACT */
 
 .outer-container {
   margin-top: 40px;
   padding: 20px 40px 40px 40px;
-  max-width: 600px;
+  max-width: 550px;
   width: 100%;
-  font-size: 2.3rem;
-  font-weight: 200;
+  font-size: 1.8rem;
+  font-family: "Trade Gothic", "Brandon", sans-serif;
+  font-weight: 400;
   line-height: 1.2;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  letter-spacing: 1px;
+  gap: 25px;
 }
 
 .outer-container > p {
@@ -367,21 +415,22 @@ body {
 }
 
 .outer-container .contact-header {
+  font-family: "Brandon", sans-serif;
   border-top: 2px solid #d73e33;
   padding-top: 20px;
   color: #d73e33;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-weight: 400;
 }
 
 .outer-container .name {
-  font-weight: 400;
-  font-size: 3.3rem;
-  margin-top: 10px;
+  font-family: "Trade Gothic", "Brandon", sans-serif;
+  font-weight: 800;
+  font-size: 2.7rem;
 }
 
 .outer-container .job {
-  font-size: 2.7rem;
+  font-size: 2.3rem;
 }
 
 .outer-container .number {
@@ -395,6 +444,12 @@ body {
 }
 
 .number > :first-child {
+  font-family: "Trade Gothic", "Brandon", sans-serif;
   min-width: 20px;
   font-weight: 800;
+}
+
+.website a {
+  text-decoration: none;
+  color: inherit;
 }
