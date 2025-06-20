@@ -168,6 +168,20 @@ body {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
+.introduction .about {
+  display: flex;
+  justify-content: center;
+}
+
+.introduction .about img {
+  max-width: 130px;
+}
+
+.about,
+.explore {
+  margin-top: -10px;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -209,8 +223,6 @@ body {
 
 .introduction .explore {
   justify-self: center;
-  font-size: 3.6rem;
-  margin-top: -20px;
 }
 
 .introduction .bottom-container {
@@ -218,10 +230,11 @@ body {
   font-size: 1.7rem;
   line-height: 1.3;
   color: #babcbe;
+  margin-top: 10px;
 }
 
 .explore img {
-  max-width: 300px;
+  max-width: 270px;
 }
 
 /* SECTION LIST */
@@ -392,6 +405,7 @@ body {
   width: 100%;
   padding: 40px 20px 60px 20px;
   justify-content: center;
+  grid-template-columns: auto;
 }
 /* CONTACT */
 
